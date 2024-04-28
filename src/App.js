@@ -5,6 +5,8 @@ import Home from './components/Home';
 import Investments from './components/Investments';
 import Savings from './components/Savings';
 import Sidebar from './components/SideBar'; // Sidebar component
+import Wealth from './components/Wealth';
+import Insurance from './components/Insurance';
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -30,6 +32,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/investments" element={<Investments />} />
             <Route path="/savings" element={<Savings />} />
+            <Route path="/wealth" element={<Wealth />} />
+            <Route path="/insurance" element={<Insurance />} />
           </Routes>
         </main>
       </div>
