@@ -1,0 +1,48 @@
+.insuranceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .title {
+    color: #212529;
+    margin-bottom: 30px;
+  }
+  
+  .uploadCard {
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .uploadInput {
+    margin-bottom: 20px;
+  }
+  
+  .uploadButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .uploadButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .fileInfo {
+    font-style: italic;
+    color: #6c757d;
+  }
+  
