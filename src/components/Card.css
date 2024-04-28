@@ -1,0 +1,21 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Set a fixed width for each card */
+  margin: 10px;
+  overflow: hidden;
+}
+
+.card-header {
+  background-color: #f3f3f3; /* Light grey */
+  color: #333; /* Dark grey */
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-content {
+  padding: 15px;
+  background-color: white;
+}

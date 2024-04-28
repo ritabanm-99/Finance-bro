@@ -1,0 +1,28 @@
+/* Navbar.css */
+.navbar {
+    /* ... your existing styles ... */
+    position: relative; /* To position hamburger absolutely inside */
+  }
+  
+  .hamburger {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 100; /* Higher than the sidebar for visibility */
+  }
+  
+  .hamburger span {
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Add 'active' class toggling styles for animation */
+  

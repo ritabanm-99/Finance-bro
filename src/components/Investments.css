@@ -1,0 +1,9 @@
+.investments-page {
+    display: flex;
+  }
+  
+  .main-content {
+    margin-left: 200px; /* Same as sidebar width */
+    padding: 20px;
+  }
+  

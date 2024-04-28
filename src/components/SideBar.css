@@ -1,0 +1,68 @@
+/* App.css or Sidebar.css */
+
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  z-index: 1001; /* Above the sidebar */
+}
+
+.hamburger span {
+  display: block;
+  height: 0.25rem;
+  width: 2rem;
+  background: #fff;
+  margin-bottom: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background: #333;
+  transition: left 0.3s ease;
+  z-index: 1000; /* High z-index to overlay on the content */
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+.content {
+  transition: margin-left 0.3s ease;
+}
+
+.content.shifted {
+  margin-left: 250px; /* Same as sidebar width */
+}
+
+/* Adjust navbar ul for the open state */
+.nav-open ul {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  /* Adjust styles for larger screens if needed */
+}

@@ -1,0 +1,50 @@
+.search-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  width: 50%; /* You can adjust the width as needed */
+  max-width: 600px; /* Maximum width */
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border: 2px solid #4CAF50; /* Or any color that fits your design */
+  border-right: none; /* Hide the right border where the button will be */
+  border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
+}
+
+.search-bar button {
+  padding: 15px 20px;
+  background-color: #4CAF50; /* Or any color that fits your design */
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0 5px 5px 0; /* Rounded corners on the right side */
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #45a049; /* A slightly darker shade for hover effect */
+}
+
+
+/* Sidebar.css */
+.sidebar {
+  width: 250px;
+  position: fixed;
+  left: -250px; /* Start offscreen */
+  top: 0;
+  bottom: 0;
+  background-color: #f3f3f3;
+  transition: left 0.3s ease-in-out;
+  z-index: 50; /* Below the hamburger icon */
+}
+
+.sidebar-open {
+  left: 0; /* Bring sidebar into view */
+}
