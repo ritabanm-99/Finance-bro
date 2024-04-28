@@ -10,6 +10,8 @@ const Sidebar = ({ isOpen, setSidebarOpen }) => {
           <li><Link to="/" onClick={() => setSidebarOpen(false)}>Home</Link></li>
           <li><Link to="/investments" onClick={() => setSidebarOpen(false)}>Investments</Link></li>
           <li><Link to="/savings" onClick={() => setSidebarOpen(false)}>Savings</Link></li>
+          <li><Link to="/wealth" onClick={() => setSidebarOpen(false)}>Wealth</Link></li>
+          <li><Link to="/insurance" onClick={() => setSidebarOpen(false)}>Insurance</Link></li>
         </ul>
       </nav>
     </aside>
